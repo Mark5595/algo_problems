@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class Tests {
+public class TestMyStrings {
   MyStrings obj = new MyStrings();
 
   @Test
@@ -38,4 +38,19 @@ public class Tests {
     assertEquals("Mr%20John%20Smith", rv);
   }
 
+  @Test
+  public void testSpace() {
+    char[] ex = {' ', ' ', ' '};
+    obj.urlify(ex, 1);
+    String rv = new String(ex);
+    assertEquals("%20", rv);
+  }
+
+  @Test
+  public void testSpace2() {
+    char[] ex = {' ', ' ', ' ', ' ', ' ', ' '};
+    obj.urlify(ex, 2);
+    String rv = new String(ex);
+    assertEquals("%20%20", rv);
+  }
 }

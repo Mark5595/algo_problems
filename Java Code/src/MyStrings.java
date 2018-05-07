@@ -1,5 +1,6 @@
 public class MyStrings {
 
+  // helper function
   private void insert(char[] str, int index, String toAdd) {
     for (char c : toAdd.toCharArray()) {
       str[index] = c;
@@ -7,7 +8,7 @@ public class MyStrings {
     }
   }
 
-  //1.3 cracking the code
+  // 1.3 cracking the code
   public void urlify(char[] str, int len){
     int spaces = 0; // number of spaces in str
     for (int i = len - 1; i >= 0; i--) {
