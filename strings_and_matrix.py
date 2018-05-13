@@ -16,7 +16,7 @@ assert str_compress("") == ""
 
 # 1.7 Rotate Matrix
 # Given an image represented by an NxN matrix, where each pixel in the image is
-# 4 bytes (say an int), write a method to rotate the image by 90 degrees (ccw). Can you do this in
+# 4 bytes (say an int), write a method to rotate the image by 90 degrees (cw). Can you do this in
 # place?
 
 # DATADEF
